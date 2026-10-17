@@ -1,0 +1,317 @@
+{
+  "freqMHz": {
+    "label": "Frequency",
+    "en": "Operating frequency; determines free-space wavelength.",
+    "ru": "Рабочая частота; определяет длину волны в свободном пространстве."
+  },
+  "floorDb": {
+    "label": "Plot floor",
+    "en": "Lower radial display limit in dB; does not define a physical radiation cutoff.",
+    "ru": "Нижний предел отображения ДН, а не физическая граница излучения."
+  },
+  "material": {
+    "label": "Conductor material",
+    "en": "pec: perfect conductor; cu: copper; al: aluminium; brass; steel; custom. Loss uses the selected resistivity.",
+    "ru": "pec — идеальный проводник; cu — медь; al — алюминий; brass — латунь; steel — сталь; custom — своё сопротивление."
+  },
+  "rhoCustom": {
+    "label": "Custom resistivity",
+    "en": "Resistivity at the intended temperature; used only for custom material. Units ohm mm²/m equal micro-ohm m.",
+    "ru": "Удельное сопротивление при рабочей температуре, только для custom. Ом·мм²/м равны мкОм·м."
+  },
+  "lengthMm": {
+    "label": "Length L",
+    "en": "Dipole: full tip-to-tip span including gap. Patch: copper metallization length, not PCB length.",
+    "ru": "У диполя — полный размах с зазором. У патча — длина меди, не платы."
+  },
+  "feedGapMm": {
+    "label": "Feed gap",
+    "en": "Distance between arm ends; each dipole/driven arm is (full length minus gap)/2. Zero represents unspecified gap.",
+    "ru": "Расстояние между торцами плеч; плечо = (полная длина − зазор)/2. Ноль означает незаданный зазор."
+  },
+  "elementType": {
+    "label": "Conductor construction",
+    "en": "wire: round conductor. flat: flat strip, or pcb where offered: PCB track. Equivalent-wire approximations do not solve the entire PCB dielectric.",
+    "ru": "wire — круглый провод; flat — полоса; pcb, где доступно, — дорожка. Эквивалентный провод не решает всю диэлектрическую плату."
+  },
+  "diameterMm": {
+    "label": "Conductor diameter",
+    "en": "Physical outer diameter of the round conductor; use the appropriate construction option.",
+    "ru": "Наружный диаметр круглого проводника при соответствующем исполнении."
+  },
+  "stripWmm": {
+    "label": "Strip width",
+    "en": "Copper strip/track width; represented by an equivalent round conductor. For Moxon, geometry follows track centrelines.",
+    "ru": "Ширина медной полосы/дорожки для эквивалентного провода. У Moxon размеры задаются по осям дорожек."
+  },
+  "mode": {
+    "label": "Patch calculation mode",
+    "en": "rect: rectangular patch model. beam: canonical pattern using supplied beamwidth; no solved input impedance.",
+    "ru": "rect — прямоугольный патч; beam — каноническая ДН по заданной ширине без расчёта импеданса."
+  },
+  "polarization": {
+    "label": "Polarization",
+    "en": "Линейная means linear; RHCP/LHCP specify handedness labels. A label alone does not solve CP geometry or axial ratio.",
+    "ru": "Линейная / RHCP / LHCP. Выбор названия не рассчитывает CP-геометрию и осевое отношение."
+  },
+  "widthMm": {
+    "label": "Copper width W",
+    "en": "Width of patch copper metallization, not the board outline.",
+    "ru": "Ширина медной металлизации патча, а не габарит платы."
+  },
+  "substrateH": {
+    "label": "Substrate thickness h",
+    "en": "Separation between patch and ground; use the actual dielectric thickness.",
+    "ru": "Расстояние между патчем и экраном; фактическая толщина диэлектрика."
+  },
+  "substrate": {
+    "label": "Substrate preset",
+    "en": "custom uses entered epsR/tanD; named presets substitute both. Verify actual laminate data at operating frequency.",
+    "ru": "custom использует epsR/tanD; именованные материалы подставляют оба значения. Уточняйте паспорт на рабочей частоте."
+  },
+  "epsR": {
+    "label": "Relative permittivity",
+    "en": "Relative dielectric permittivity, used for a custom substrate; hidden values are still saved.",
+    "ru": "Относительная проницаемость своей подложки; скрытые значения сохраняются."
+  },
+  "tanD": {
+    "label": "Dielectric loss tangent",
+    "en": "Loss tangent for a custom substrate. Zero excludes dielectric loss, not all other losses.",
+    "ru": "Тангенс потерь своей подложки. Ноль исключает диэлектрические, но не все прочие потери."
+  },
+  "groundLmm": {
+    "label": "Ground length",
+    "en": "Ground-plane extent along patch L; finite-ground pattern effects are approximate.",
+    "ru": "Размер экрана вдоль L; эффекты конечного экрана приближённые."
+  },
+  "groundWmm": {
+    "label": "Ground width",
+    "en": "Ground-plane extent along patch W; not the copper patch width.",
+    "ru": "Размер экрана вдоль W, не ширина медного патча."
+  },
+  "feedInsetMm": {
+    "label": "Feed inset",
+    "en": "Feed distance inward from the patch edge; zero is edge feeding. Affects the impedance model.",
+    "ru": "Углубление питания от края патча; ноль — питание с края. Влияет на импеданс."
+  },
+  "hpbwDeg": {
+    "label": "Half-power beamwidth",
+    "en": "Known/measured main-lobe width at −3 dB for the beam-defined pattern.",
+    "ru": "Известная/измеренная ширина главного лепестка −3 дБ для режима по ширине луча."
+  },
+  "gainDbi": {
+    "label": "Known gain",
+    "en": "Known/measured gain for the beam-defined pattern; zero means unspecified, not a measurement of 0 dBi.",
+    "ru": "Известное усиление для режима по лучу; ноль означает отсутствие данных, а не измеренные 0 дБи."
+  },
+  "backLobeDb": {
+    "label": "Known back-lobe level",
+    "en": "Measured relative back-lobe level for beam mode; zero means unavailable, so no invented rear lobe.",
+    "ru": "Измеренный относительный задний лепесток; ноль — нет данных, задний лепесток не выдумывается."
+  },
+  "targetZ": {
+    "label": "Target impedance",
+    "en": "Synthesis target; patch inset/feed calculation or the available Moxon design family. Does not redefine all displayed SWR references.",
+    "ru": "Цель синтеза питания патча либо семейство Moxon. Не переопределяет автоматически опорное сопротивление всех КСВ."
+  },
+  "apertureA": {
+    "label": "H-plane aperture a",
+    "en": "Horn aperture dimension along the broad wall / H plane.",
+    "ru": "Размер раскрыва по широкой стенке, H-плоскость."
+  },
+  "apertureB": {
+    "label": "E-plane aperture b",
+    "en": "Horn aperture dimension along the narrow wall / E plane.",
+    "ru": "Размер раскрыва по узкой стенке, E-плоскость."
+  },
+  "flareE": {
+    "label": "E-plane slant length",
+    "en": "E-plane flare length used for aperture phase error; supply both E/H values. Zero omits that phase information.",
+    "ru": "Образующая E для фазовой ошибки раскрыва; задавайте обе E/H. Ноль — отсутствие фазовых данных."
+  },
+  "flareH": {
+    "label": "H-plane slant length",
+    "en": "H-plane flare length; used together with the E-plane value.",
+    "ru": "Образующая H, используется вместе с E."
+  },
+  "targetGainDbi": {
+    "label": "Target gain/directivity",
+    "en": "Horn: gain target. Uniform array: isotropic-array directivity target. GNSS: target for a single helix, not the whole assembly.",
+    "ru": "Рупор — цель усиления; решётка — КНД изотропной решётки; GNSS — усиление одной спирали."
+  },
+  "count": {
+    "label": "Element count N",
+    "en": "Number of driven isotropic array elements or LPDA dipoles, depending on the selected family.",
+    "ru": "Число изотропных излучателей решётки либо диполей ЛПА."
+  },
+  "spacingMm": {
+    "label": "Element spacing d",
+    "en": "Centre-to-centre separation of adjacent uniform-array elements.",
+    "ru": "Расстояние между центрами соседних элементов равномерной решётки."
+  },
+  "phaseDeg": {
+    "label": "Progressive phase",
+    "en": "Phase change between adjacent elements; zero gives broadside excitation in this array model.",
+    "ru": "Фазовый сдвиг соседних элементов; ноль — поперечное излучение в модели решётки."
+  },
+  "goal": {
+    "label": "Array design target",
+    "en": "gain chooses directivity; beam chooses half-power beamwidth as the count-selection target.",
+    "ru": "gain — по КНД; beam — по ширине луча для подбора числа элементов."
+  },
+  "targetHpbwDeg": {
+    "label": "Target beamwidth",
+    "en": "Required main-lobe half-power width for array synthesis.",
+    "ru": "Целевая ширина главного лепестка −3 дБ для синтеза решётки."
+  },
+  "spacingRel": {
+    "label": "Spacing / wavelength",
+    "en": "Uniform-array spacing expressed as a fraction of free-space wavelength.",
+    "ru": "Шаг решётки в долях длины волны свободного пространства."
+  },
+  "elements": {
+    "label": "Yagi element table",
+    "en": "Rows: role, full length, diameter, axial position in mm. Exactly one driven element; stored in [elements], not a scalar key.",
+    "ru": "Строки: роль, полная длина, диаметр, позиция в мм. Активный один. Хранится в [elements], не скалярным ключом."
+  },
+  "mounting": {
+    "label": "Boom mounting",
+    "en": "none/dielectric: no metallic correction; through-contact: through boom with contact; through-insulated: insulated passage; ontop-contact: on top with contact.",
+    "ru": "none/dielectric — без металлической поправки; through-contact — сквозной контакт; through-insulated — изоляция; ontop-contact — контакт сверху."
+  },
+  "boomDiaMm": {
+    "label": "Boom diameter/side",
+    "en": "Outer diameter of round boom or side of square boom for the empirical correction.",
+    "ru": "Наружный диаметр круглого бума либо сторона квадратного для эмпирической поправки."
+  },
+  "boomShape": {
+    "label": "Boom shape",
+    "en": "round or square. Relevant to on-top contact correction; always saved even when hidden.",
+    "ru": "round — круглый, square — квадратный. Влияет при контакте сверху; сохраняется и скрытым."
+  },
+  "elementCount": {
+    "label": "Total Yagi elements",
+    "en": "Total reflector + driven element + directors; DL6WU is intended for longer arrays.",
+    "ru": "Всего: рефлектор, активный и директоры. DL6WU предназначен для длинных антенн."
+  },
+  "elementDiaMm": {
+    "label": "Yagi conductor diameter",
+    "en": "Conductor diameter used by synthesis and its diameter correction.",
+    "ru": "Диаметр проводника для синтеза и поправки на толщину."
+  },
+  "widthA": {
+    "label": "Moxon width A",
+    "en": "Full main-side span of the Moxon rectangle; track centreline dimensions for PCB.",
+    "ru": "Полный размер главной стороны Moxon; для PCB — по осям дорожек."
+  },
+  "tailB": {
+    "label": "Driven tail B",
+    "en": "Length of a bent driven-element end toward the reflector.",
+    "ru": "Длина загиба активного в сторону рефлектора."
+  },
+  "gapC": {
+    "label": "End gap C",
+    "en": "Separation between the driven and reflector ends.",
+    "ru": "Зазор между концами активного и рефлектора."
+  },
+  "tailD": {
+    "label": "Reflector tail D",
+    "en": "Length of the reflector end bent toward the driven element.",
+    "ru": "Длина загиба рефлектора в сторону активного."
+  },
+  "tau": {
+    "label": "Scale factor tau",
+    "en": "Ratio of successive LPDA lengths. Larger values generally require more elements for a given band.",
+    "ru": "Отношение соседних длин ЛПА; большее значение обычно требует больше элементов на ту же полосу."
+  },
+  "sigma": {
+    "label": "Relative spacing sigma",
+    "en": "LPDA relative spacing convention: adjacent distance is 2 × sigma × full element length.",
+    "ru": "Принятая нормировка ЛПА: соседнее расстояние = 2 × sigma × полная длина элемента."
+  },
+  "longestMm": {
+    "label": "Longest dipole length",
+    "en": "Full rear/longest LPDA element length; others follow the geometric progression.",
+    "ru": "Полная длина самого большого заднего диполя; остальные — геометрическая прогрессия."
+  },
+  "feederZ0": {
+    "label": "Distribution-line impedance",
+    "en": "Characteristic impedance of the crossed feed line; not automatically the external cable reference.",
+    "ru": "Волновое сопротивление перекрёстной линии, не автоматически опорное сопротивление внешнего кабеля."
+  },
+  "freqLowMHz": {
+    "label": "Lower band edge",
+    "en": "Low design frequency, controlling the longest LPDA dipole.",
+    "ru": "Нижняя частота синтеза, определяет самый длинный диполь ЛПА."
+  },
+  "freqHighMHz": {
+    "label": "Upper band edge",
+    "en": "High design frequency, controlling the shortest required LPDA dipole.",
+    "ru": "Верхняя частота синтеза, определяет необходимый самый короткий диполь."
+  },
+  "helixCount": {
+    "label": "Helix count",
+    "en": "Number of identical helices in the modeled assembly.",
+    "ru": "Число одинаковых спиралей в моделируемой сборке."
+  },
+  "helixDiaMm": {
+    "label": "Winding diameter",
+    "en": "Helix winding diameter; circumference is pi times this value.",
+    "ru": "Диаметр намотки; окружность витка равна πD."
+  },
+  "turns": {
+    "label": "Turns",
+    "en": "Actual number of winding turns; enter construction data rather than guessing.",
+    "ru": "Фактическое число витков по конструкции."
+  },
+  "heightMm": {
+    "label": "Winding height",
+    "en": "Axial winding height, defining pitch together with turns.",
+    "ru": "Высота намотки по оси; вместе с числом витков задаёт шаг."
+  },
+  "arrangeRadiusMm": {
+    "label": "Placement radius",
+    "en": "Radius of the circle through helix axes; geometry must avoid intersecting helices.",
+    "ru": "Радиус расстановки осей спиралей; спирали не должны пересекаться."
+  },
+  "conductor": {
+    "label": "Winding conductor",
+    "en": "tape: copper strip approximated by wire radius width/4; wire: round conductor radius diameter/2.",
+    "ru": "tape — лента с эквивалентным радиусом ширина/4; wire — круглый провод с радиусом диаметр/2."
+  },
+  "tapeWidthMm": {
+    "label": "Tape width",
+    "en": "Physical conductor strip width for tape winding.",
+    "ru": "Ширина проводящей ленты намотки."
+  },
+  "wireDiaMm": {
+    "label": "Winding wire diameter",
+    "en": "Bare conductive wire diameter, excluding insulation.",
+    "ru": "Диаметр проводящего металла без изоляции."
+  },
+  "sense": {
+    "label": "Winding handedness",
+    "en": "RH or LH; handedness selection does not by itself prove received-signal axial ratio.",
+    "ru": "RH или LH; выбор направления сам по себе не доказывает осевое отношение принимаемого сигнала."
+  },
+  "groundPlane": {
+    "label": "Helix screen",
+    "en": "yes: finite flat disk; inf: ideal infinite plane; no: no screen. These have different physical assumptions.",
+    "ru": "yes — конечный плоский диск; inf — идеальная бесконечная плоскость; no — без экрана."
+  },
+  "screenDiaMm": {
+    "label": "Finite screen diameter",
+    "en": "Diameter of the finite flat disk approximation; does not reproduce a shaped/coated enclosure.",
+    "ru": "Диаметр приближённого плоского диска; не описывает сложный корпус/покрытие."
+  },
+  "standoffMm": {
+    "label": "Base height above screen",
+    "en": "Height of winding base above screen. The solver may increase too-small values and report that adjustment.",
+    "ru": "Высота основания над экраном; слишком малое значение модель может увеличить с предупреждением."
+  },
+  "pitchRel": {
+    "label": "Pitch / wavelength",
+    "en": "Axial pitch of one turn as a fraction of wavelength for synthesis.",
+    "ru": "Осевой шаг одного витка в долях длины волны для синтеза."
+  }
+}

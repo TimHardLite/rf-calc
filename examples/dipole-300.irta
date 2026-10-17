@@ -1,0 +1,26 @@
+IRTANT/2
+name = Dipole example 300 MHz
+type = dipole
+mode = analysis
+note = Educational example; not a manufacturing specification
+
+[params]
+freqMHz = 300
+lengthMm = 475
+feedGapMm = 5
+elementType = wire
+diameterMm = 3
+stripWmm = 6
+material = cu
+rhoCustom = 0.01724
+floorDb = -40
+
+[synthesis]
+freqMHz = 300
+elementType = wire
+diameterMm = 3
+stripWmm = 6
+feedGapMm = 5
+material = cu
+rhoCustom = 0.01724
+floorDb = -40
