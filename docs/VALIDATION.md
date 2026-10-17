@@ -45,3 +45,15 @@ Documentation audit: 68 relative links resolve; 284 rows cover all 142 fields in
 The current Yagi illustration was captured from the running application at 180 MHz with both full pattern cuts visible. Public version metadata is synchronized to 1.0.0-beta.1; the only src change after the 16 October suite is the footer version label. Calculation algorithms and the IRTA format are unchanged.
 
 Новый снимок яги сделан в работающей программе на 180 МГц: оба сечения видны целиком. Метаданные согласованы с 1.0.0-beta.1; после прогона 16 октября в src изменена только надпись версии внизу интерфейса. Алгоритмы и формат IRTA прежние.
+
+## GitHub validation — 17 October 2026
+
+[Public CI run](https://github.com/TimHardLite/rf-calc/actions/runs/38992354858), commit c491350: Ubuntu 24.04, Node 24.21.0, npm 11.19.0. Clean npm ci, **243/243 tests in 15 files**, TypeScript/Vite build and the 142-field documentation check all passed. Test duration: 85.70 seconds. The web artifact was uploaded successfully.
+
+npm also reported **7 dependency advisories (3 moderate, 2 high, 2 critical)**. A passing correctness/build workflow does not mean a clean security audit. These advisories need package-by-package triage; production-bundle impact is not established here. Keep development/test servers local, deploy only dist through a static server, and do not treat this beta as security-certified. Dependency upgrades remain separate from this publication-only change. The detailed advisory triage remains pending.
+
+## Проверка GitHub — 17 октября 2026
+
+[Публичный CI](https://github.com/TimHardLite/rf-calc/actions/runs/38992354858), коммит c491350: Ubuntu 24.04, Node 24.21.0, npm 11.19.0. Успешны чистая установка, **243/243 теста в 15 файлах**, сборка TypeScript/Vite и проверка 142 полей. Тесты: 85,70 с; веб-артефакт загружен.
+
+npm также сообщил о **7 предупреждениях безопасности зависимостей (3 moderate, 2 high, 2 critical)**. Успешные тесты не означают чистый аудит безопасности. Требуется отдельный разбор пакетов; влияние на готовую статическую сборку здесь не установлено. Серверы разработки/тестов оставляйте локальными, размещайте только dist через статический сервер. Обновление зависимостей — отдельное изменение; подробный разбор предупреждений остаётся отдельной задачей.

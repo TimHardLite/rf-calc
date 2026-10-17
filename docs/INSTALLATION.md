@@ -101,6 +101,8 @@ npm ci
 npm run build
 ```
 
+Alternatively, download **rf-calc-1.0.0-beta.1-web.zip** from [the beta release](https://github.com/TimHardLite/rf-calc/releases/tag/v1.0.0-beta.1) and extract it. This skips Node and the build step; you still need an HTTP server as shown below.
+
 The output is `dist/`. Copy **only its contents** to your static website root. A prepared web archive contains these same files. Keep the `assets/` directory and logos together. Opening `index.html` by double-clicking is unsupported because module workers need an HTTP(S) origin.
 
 For a quick local check with Python 3 installed, run from the source folder:
@@ -295,6 +297,8 @@ npm run dev
 ## 2. Готовая веб-сборка
 
 Windows: `npm.cmd ci`, затем `npm.cmd run build`. Linux/macOS: `npm ci`, затем `npm run build`. Результат — папка `dist/`; на сервер переносится её содержимое целиком, вместе с `assets/` и логотипами. Подготовленный веб-архив содержит те же файлы. Двойной щелчок по `index.html` не подходит: нужен HTTP(S), чтобы работали модули и фоновые потоки.
+
+Можно пропустить Node и сборку: скачайте **rf-calc-1.0.0-beta.1-web.zip** со [страницы бета-выпуска](https://github.com/TimHardLite/rf-calc/releases/tag/v1.0.0-beta.1), распакуйте и запустите HTTP-сервер, как ниже.
 
 Локальная проверка при установленном Python 3:
 

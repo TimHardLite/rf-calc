@@ -6,7 +6,7 @@
 
 English · [Русский](#русский)
 
-**[Download source ZIP](https://github.com/TimHardLite/rf-calc/archive/refs/heads/main.zip)** · **[Step-by-step setup](docs/INSTALLATION.md)** · **[Donate / Поддержать](https://app.lava.top/hardlite)**
+**[Release downloads](https://github.com/TimHardLite/rf-calc/releases/tag/v1.0.0-beta.1)** · **[Download source ZIP](https://github.com/TimHardLite/rf-calc/archive/refs/heads/main.zip)** · **[Step-by-step setup](docs/INSTALLATION.md)** · **[Donate / Поддержать](https://app.lava.top/hardlite)**
 
 > **First public beta: 1.0.0-beta.1**, based on internal v3. The interface is Russian; documentation is available in English and Russian. Native installers are not available yet.
 
@@ -27,7 +27,7 @@ RF CALC helps turn antenna dimensions into readable radiation patterns and engin
 
 | Option | Best for | Status |
 |---|---|---|
-| Browser build | Trying RF CALC; Windows, Linux or macOS with a modern browser | Buildable source; web build from GitHub Actions |
+| Browser build | Trying RF CALC; Windows, Linux or macOS with a modern browser | Source and ready-to-serve web ZIP in Releases |
 | Self-hosted static site | A lab, home server or shared domain | Caddy deployment instructions included |
 | Docker Compose | Repeatable hosting on a server or Docker Desktop | Configuration supplied; container runtime verification pending |
 | Tauri desktop | A normal application window and native file dialogs | Source included; release installers **not available yet** |
@@ -87,7 +87,7 @@ RF CALC строит диаграммы и рассчитывает характ
 
 | Вариант | Для кого | Готовность |
 |---|---|---|
-| Браузер | Быстро попробовать на Windows/Linux/macOS | Исходники; веб-сборка в GitHub Actions |
+| Браузер | Быстро попробовать на Windows/Linux/macOS | Исходники и готовый веб-ZIP в Releases |
 | Собственный сайт | Лаборатория, домашний сервер, свой домен | Инструкция для Caddy |
 | Docker Compose | Повторяемое развёртывание | Конфигурация готова; запуск контейнера ещё не проверен |
 | Tauri desktop | Обычное окно приложения и системные диалоги | Исходники есть; готовых установщиков пока нет |
