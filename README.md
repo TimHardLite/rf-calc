@@ -6,7 +6,7 @@
 
 English · [Русский](#русский)
 
-**[Release downloads](https://github.com/TimHardLite/rf-calc/releases/tag/v1.0.0-beta.1)** · **[Download source ZIP](https://github.com/TimHardLite/rf-calc/archive/refs/heads/main.zip)** · **[Step-by-step setup](docs/INSTALLATION.md)** · **[Donate / Поддержать](https://app.lava.top/hardlite)**
+**[Release downloads](https://github.com/TimHardLite/rf-calc/releases/tag/v1.0.0-beta.1)** · **[Download source ZIP](https://github.com/TimHardLite/rf-calc/archive/refs/heads/main.zip)** · **[Step-by-step setup](docs/INSTALLATION.md)** · **[Donate / Поддержать](https://app.lava.top/hardlite)** 🪙 .
 
 > **First public beta: 1.0.0-beta.1**, based on internal v3. The interface is Russian; documentation is available in English and Russian. Native installers are not available yet.
 
@@ -54,7 +54,7 @@ The calculation code is implemented in TypeScript using method-of-moments solver
 
 ## Support and license
 
-Voluntary support: **[Support RF CALC on Lava.top](https://app.lava.top/hardlite)**. Donations are optional and do not unlock application features.
+Voluntary support: **[Support RF CALC on Lava.top](https://app.lava.top/hardlite)** 🪙. Donations are optional and do not unlock application features.
 
 License: **not yet selected**. Public source access does not grant an open-source license; no additional permission to redistribute or relicense the application is granted here. Dependencies retain their own licenses; see [third-party notes](THIRD-PARTY-NOTICES.md).
 
@@ -72,7 +72,7 @@ Created by **Timur Gabzalilov**, a design engineer at **IRT**, for the company's
 
 RF CALC строит диаграммы и рассчитывает характеристики по геометрии антенны либо подбирает начальные размеры по исходным требованиям. В программе восемь семейств антенн, размерные схемы, два режима, оптимизация поддерживаемых размеров, графики КСВ и редактируемые файлы `.irta`.
 
-**[Скачать исходники ZIP](https://github.com/TimHardLite/rf-calc/archive/refs/heads/main.zip)** · **[Пошаговая установка](docs/INSTALLATION.md#русский)** · **[Поддержать проект](https://app.lava.top/hardlite)**
+**[Скачать исходники ZIP](https://github.com/TimHardLite/rf-calc/archive/refs/heads/main.zip)** · **[Пошаговая установка](docs/INSTALLATION.md#русский)** · **[Поддержать проект](https://app.lava.top/hardlite)** 🪙 .
 
 ## Возможности
 
@@ -111,7 +111,7 @@ RF CALC строит диаграммы и рассчитывает характ
 
 ## Поддержка и лицензия
 
-Добровольная поддержка: **[Поддержать RF CALC на Lava.top](https://app.lava.top/hardlite)**. Донаты необязательны и не открывают дополнительные функции программы.
+Добровольная поддержка: **[Поддержать RF CALC на Lava.top](https://app.lava.top/hardlite)** 🪙. Донаты необязательны и не открывают дополнительные функции программы.
 
 Лицензия: **пока не выбрана**. Публичный доступ к коду не означает открытую лицензию; дополнительное разрешение на распространение или смену лицензии здесь не предоставляется. Лицензии зависимостей действуют отдельно: [сторонние компоненты](THIRD-PARTY-NOTICES.md).
 
